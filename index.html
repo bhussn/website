@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +18,15 @@
         <ul>
             <li><a href="#exper">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="quiz.html">Quiz</a></li>
         </ul>
     </div>
+
+<!-- back to top button -->
+<button id="backToTopBtn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
 <!-- heading -->
     <div class="content-container">    
@@ -53,7 +58,23 @@
         <h2>Experience</h2>
         <div class="scroll=exp">
             <div class="exp-row">
-                <p><strong>CI COMPASS </strong>  - Fellow</p>
+                <p><strong>Privacy & Security for LLMs Research</strong>  - REU</p>
+                <p><i>May 2025 - Aug 2025</i></p>
+                <p>Designed a hybrid privacy-preserving framework enabling multiple 
+                    organizations to collaboratively train large language models without 
+                    exposing sensitive data. Analyzed system performance and privacy trade-offs 
+                    in NLP tasks across diverse client environments; authored research paper under
+                     conference review</a></p>
+                <ul>
+                    <li>Python</li>
+                    <li>🤗</li>
+                    <li>gRPC</li>
+                    <li>Flower Framework</li>
+                    <li>Python unittest</li>
+                </ul>
+            </div>
+            <div class="exp-row">
+                <p><strong>Fellow</strong> - CI COMPASS</p>
                 <p><i>Jan 2025 - Present</i></p>
                 <p> Gained insight on cyberinfrastructure challenges for NSF Major 
                     Facilities, enhanced skills in Python, and engaged with experts 
@@ -66,7 +87,7 @@
             </div>
 
             <div class="exp-row">
-                <p><strong>Tufts</strong>  - Course Assistant</p>
+                <p><strong>Course Assistant</strong> - Tufts</p>
                 <p><i>Sept 2024 - Present</i></p>
                 <p>Web Programming</p>
                 <p> Led office hours, providing clear explanations and 
@@ -87,7 +108,7 @@
             </div>
 
             <div class="exp-row">
-                <p><strong>Digital by Jess LLC</strong>  - Frontend Intern</p>
+                <p><strong>Frontend Intern</strong> - Digital by Jess LLC</p>
                 <p><i>Jun 2024 - Aug 2024</i></p>
                 <p> I improved web page layout, responsiveness, and
                      functionality using CSS and HTML, while streamlining 
@@ -102,7 +123,7 @@
             </div>
 
             <div class="exp-row">
-                <p><strong>Fembot Creative </strong>  - Intern</p>
+                <p><strong>Intern</strong> - Fembot Creative</p>
                 <p><i>Apr 2024 - Jul 2024</i></p>
                 <p>Collaborated on the design and development of a website tailored to the client's specifications.
                     Website: <a href='http://firstspiritualtemplesf.com' target="_blank">here</a></p>
@@ -122,6 +143,32 @@
 
         <div class="project-row-container">
             <div class="proj-row">
+                <!-- add links to project  -->
+                <p><strong>Password Strength Meter</strong></p>
+                <ul>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="proj-row">
+                <p><strong>Keylogger</strong></p>
+                <ul>
+                    <li>python</li>
+                </ul>
+            </div>
+
+            <div class="proj-row">
+                <p><strong>HTTP Listener Dataset Analysis</strong></p>
+                <ul>
+                    <li>Splunk</li>
+                    <li>Catalyst</li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="proj-row">
                 <p><strong>Binary Bomb Lab</strong></p>
                 <ul>
                     <li>Assembly</li>
@@ -137,25 +184,10 @@
                     <li>Wireshark</li>
                 </ul>
             </div>
-    
-            <div class="proj-row">
-                <p><strong>HTTP Listener Dataset Analysis</strong></p>
-                <ul>
-                    <li>Splunk</li>
-                    <li>Catalyst</li>
-                </ul>
-            </div>
-
             <div class="proj-row">
                 <p><strong>Reverse Polish Notation Calculator</strong></p>
                 <ul>
                     <li>UMASM</li>
-                </ul>
-            </div>
-            <div class="proj-row">
-                <p><strong>Keylogger</strong></p>
-                <ul>
-                    <li>python</li>
                 </ul>
             </div>
             <div class="proj-row">
@@ -199,14 +231,24 @@
                     <li>C++</li>
                 </ul>
             </div>
-            <div class="proj-row">
-                <p><strong>Password Strength Meter</strong></p>
-                <ul>
-                    <li>Python</li>
-                </ul>
-            </div>
         </div>
     </div>
+
+<div class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Want to connect? I'm most active on LinkedIn.</p>
+  <p>Also, take my quiz for some fun!</p>
+  
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/baydan-hussen" class="contact-link" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="quiz.html" class="contact-link">
+      <i class="fas fa-question-circle"></i> Quiz
+    </a>
+  </div>
+</div>
+
 
 <!-- asking for them to take quiz  -->
 </div>
@@ -219,4 +261,13 @@
         loop: true
     })
 </script>
+<script>
+    document.getElementById("backToTopBtn").addEventListener("click", function () {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        });
+    });
+</script>
+
 </body>
