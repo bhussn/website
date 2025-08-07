@@ -417,3 +417,126 @@ body.quiz-mode .nav ul li a {
     opacity: 0.8;
     cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 5px 0; 
+  }
+
+  .nav ul li {
+    margin: 1% 1.5%; 
+    font-size: 14px;  
+    padding: 4px 8px; 
+  }
+}
+
+/* Quiz container responsiveness */
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    margin: 50px auto 0;
+    padding: 20px;
+  }
+
+  .app h1 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .quiz h2 {
+    font-size: 16px;
+  }
+
+  .btn-quiz {
+    font-size: 14px;
+    padding: 12px 10px;
+    margin: 8px 0;
+  }
+
+  #startBtn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  #next-btn {
+    width: 100%;
+    max-width: none;
+    padding: 12px 0;
+    font-size: 16px;
+    margin: 20px 0 0;
+  }
+}
+
+/* Button hover and disabled states (unchanged but good to keep here) */
+.btn-quiz:hover:not([disabled]) {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.btn-quiz:disabled {
+  cursor: no-drop;
+  opacity: 0.8;
+}
+
+/* Quiz mode colors (kept for theme consistency) */
+html.quiz-mode,
+body.quiz-mode {
+  background-color: #394867;
+  color: #F0F5F9;
+}
+
+body.quiz-mode .app {
+  background-color: #526D82;
+  color: #F0F5F9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+body.quiz-mode .app h1,
+body.quiz-mode .quiz h2 {
+  color: #F0F5F9;
+}
+
+body.quiz-mode .btn-quiz {
+  background-color: #F0F5F9;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+body.quiz-mode .btn-quiz:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 5px 0;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav ul li {
+    margin: 0 8px; 
+    font-size: 12px; 
+    padding: 4px 8px;
+    display: inline-block; 
+  }
+}
+
